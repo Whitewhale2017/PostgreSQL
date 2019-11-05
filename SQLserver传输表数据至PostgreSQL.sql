@@ -7,4 +7,7 @@ insert into openquery([192.168.143.11],'select * from public.hrmresource') selec
 
 insert into openquery([192.168.143.12],'select * from public.hrmresource') select top 1 * from hrmresource -- PostgreSQL12.0 该版本此语句执行异常
 
-insert into openquery([192.168.43.200],'select * from public.hrmdepartment') select top 1  * from hrmdepartment
+
+insert into openquery([192.168.143.12],'select * from public.hrmresource') select top 1 * from hrmresource -- PostgreSQL11.0 该版本此语句可执行
+
+insert into openquery([192.168.43.200],'select * from public.hrmresource') select top 1  * from hrmresource

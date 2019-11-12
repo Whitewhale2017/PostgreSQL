@@ -22,11 +22,6 @@ options(user 'wangyy',password 'Wyy123456');
 create foreign table ft_Test(id integer, name character varying(10)[]) --自定义外部表字段
 server fs_DataWare options(schema_name 'public',table_name 'Test');
 
-CREATE FOREIGN TABLE public.ft_uf_fixedassets()
-    INHERITS (public.uf_fixedassets) --继承远程表字段
-    SERVER fs_dataware
-    OPTIONS (schema_name 'public', table_name 'uf_fixedassets');
-
 
 
 ------检验------
